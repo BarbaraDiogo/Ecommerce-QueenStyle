@@ -5,7 +5,7 @@ const ProductsOnSale = () => {
   return (
     <div>
       <h3 className="font-titleFont text-xl font-semibold mb-6 underline underline-offset-4 decoration-[1px]">
-        Products on sale
+        Talvez você goste
       </h3>
       <div className="flex flex-col gap-2">
         {SplOfferData.map((item) => (
@@ -18,7 +18,7 @@ const ProductsOnSale = () => {
             </div>
             <div className="flex flex-col gap-2 font-titleFont">
               <p className="text-base font-medium">{item.productName}</p>
-              <p className="text-sm font-semibold">${item.price}</p>
+              <p className="text-sm font-semibold">R${item.price}</p>
             </div>
           </div>
         ))}

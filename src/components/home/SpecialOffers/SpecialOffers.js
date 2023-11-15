@@ -2,52 +2,52 @@ import React from "react";
 import Heading from "../Products/Heading";
 import Product from "../Products/Product";
 import {
-  spfOne,
-  spfTwo,
-  spfThree,
-  spfFour,
+  tenis,
+  verde,
+  cinto,
+  smartwatch,
 } from "../../../assets/images/index";
 
 const SpecialOffers = () => {
   return (
-    <div className="w-full pb-20">
-      <Heading heading="Special Offers" />
+    <div className="w-full pb-20" id="promocao">
+      <Heading heading="Promoções" />
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-3 xl:grid-cols-4 gap-10">
         <Product
           _id="1101"
-          img={spfOne}
-          productName="Cap for Boys"
-          price="35.00"
-          color="Blank and White"
+          img={tenis}
+          productName="Tênis Street"
+          price="115,00"
+          color="Preto"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="Tênis Street Em Material Sintético Com Cadarço E Recortes Preto."
         />
         <Product
           _id="1102"
-          img={spfTwo}
-          productName="Tea Table"
-          price="180.00"
-          color="Gray"
+          img={verde}
+          productName="Calça Fluida Verde"
+          price="110,00"
+          color="Verde"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="Calça Fluida Em Viscolinho Com Amarração No Cós Verde."
         />
         <Product
           _id="1103"
-          img={spfThree}
-          productName="Headphones"
-          price="25.00"
-          color="Mixed"
+          img={cinto}
+          productName="Kit 2 cintos"
+          price="50,00"
+          color="Marrom/Bege"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="Kit 02 Cintos Estreitos Com Diferentes Modelos De Fivela Marrom/Bege."
         />
         <Product
           _id="1104"
-          img={spfFour}
-          productName="Sun glasses"
-          price="220.00"
-          color="Black"
+          img={smartwatch}
+          productName="Smartwatch"
+          price="220,00"
+          color="Preto"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="Relógio Mormaii Smartwatch Molife Com Pulseira Em Silicone MOLIFEAB/8P Preto."
         />
       </div>
     </div>

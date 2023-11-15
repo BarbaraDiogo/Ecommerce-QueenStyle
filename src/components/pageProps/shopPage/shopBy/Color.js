@@ -7,28 +7,33 @@ const Color = () => {
   const colors = [
     {
       _id: 9001,
-      title: "Green",
+      title: "Verde",
       base: "#22c55e",
     },
     {
       _id: 9002,
-      title: "Gray",
+      title: "Cinza",
       base: "#a3a3a3",
     },
     {
       _id: 9003,
-      title: "Red",
+      title: "Vermelho",
       base: "#dc2626",
     },
     {
       _id: 9004,
-      title: "Yellow",
+      title: "Amarelo",
       base: "#f59e0b",
     },
     {
       _id: 9005,
-      title: "Blue",
+      title: "Azul",
       base: "#3b82f6",
+    },
+    {
+      _id: 9006,
+      title: "Preto",
+      base: "#000000",
     },
   ];
 
@@ -38,7 +43,7 @@ const Color = () => {
         onClick={() => setShowColors(!showColors)}
         className="cursor-pointer"
       >
-        <NavTitle title="Shop by Color" icons={true} />
+        <NavTitle title="Compre por cor" icons={true} />
       </div>
       {showColors && (
         <motion.div

@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import { BsCheckCircleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { logoLight } from "../../assets/images";
 
 const SignIn = () => {
   // ============= Initial State Start here =============
@@ -28,16 +26,16 @@ const SignIn = () => {
     e.preventDefault();
 
     if (!email) {
-      setErrEmail("Enter your email");
+      setErrEmail("Entre com seu e-mail");
     }
 
     if (!password) {
-      setErrPassword("Create a password");
+      setErrPassword("Crie uma senha");
     }
     // ============== Getting the value ==============
     if (email && password) {
       setSuccessMsg(
-        `Hello dear, Thank you for your attempt. We are processing to validate your access. Till then stay connected and additional assistance will be sent to you by your mail at ${email}`
+        `Seja bem-vindo/a, obrigado pelo seu pedido. Estamos processando para validar o seu acesso. Até lá, mantenha-se conectado/a, e informações adicionais serão enviadas para você por e-mail em breve. ${email}`
       );
       setEmail("");
       setPassword("");

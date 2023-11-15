@@ -3,8 +3,7 @@ import { Link, NavLink, useLocation, useNavigate } from "react-router-dom";
 import { MdClose } from "react-icons/md";
 import { HiMenuAlt2 } from "react-icons/hi";
 import { motion } from "framer-motion";
-import { logo, logoLight } from "../../../assets/images";
-import Image from "../../designLayouts/Image";
+import { logo } from "../../../assets/images";
 import { navBarList, paginationItems } from "../../../constants";  // Importe as referências necessárias
 import Flex from "../../designLayouts/Flex";
 import { FaSearch, FaUser, FaCaretDown, FaShoppingCart} from "react-icons/fa";
@@ -84,11 +83,6 @@ const Header = () => {
                   className="w-[80%] h-full relative"
                 >
                   <div className="w-full h-full bg-primeColor p-6">
-                    <img
-                      className="w-28 mb-6"
-                      src={logoLight}
-                      alt="logoLight"
-                    />
                     <ul className="text-gray-200 flex flex-col gap-2">
                       {navBarList.map((item) => (
                         <li
@@ -158,9 +152,9 @@ const Header = () => {
                         </p>
                         <p className="text-xs">{item.des}</p>
                         <p className="text-sm">
-                          Price:{" "}
+                          Preço:{" "}
                           <span className="text-primeColor font-semibold">
-                            ${item.price}
+                            R${item.price}
                           </span>
                         </p>
                       </div>
@@ -200,7 +194,7 @@ const Header = () => {
                 </li>
               </motion.ul>
             )}
-            <Link to="/cart">
+            <Link to="/carrinho">
               <div className="relative">
                 <FaShoppingCart />
                 <span className="absolute font-titleFont top-3 -right-2 text-xs w-4 h-4 flex items-center justify-center rounded-full bg-primeColor text-white">
@@ -208,7 +202,7 @@ const Header = () => {
                 </span>
               </div>
             </Link>
-            <Link to="/cart">
+            <Link to="/carrinho">
               <div className="relative pl-2">
                 <FaExchangeAlt />
               </div>
