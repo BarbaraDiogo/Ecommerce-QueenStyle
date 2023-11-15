@@ -56,7 +56,7 @@ const Novidades = () => {
             _id="100001"
             img={novidade1}
             productName="Macaquinho Sarja Branco"
-            price="52,00"
+            price="52.00"
             color="Branco"
             badge={true}
             des="Macaquinho Sarja Com Alcinha E Amarração Traseira Branco."
@@ -67,7 +67,7 @@ const Novidades = () => {
             _id="100002"
             img={novidade2}
             productName="Camiseta Oversized Em Algodão"
-            price="45,00"
+            price="45.00"
             color="Cinza escuro"
             badge={false}
             des="Camiseta Oversized Em Algodão Com Bordado Stronger Na Gola Cinza Escuro."
@@ -78,7 +78,7 @@ const Novidades = () => {
             _id="100003"
             img={novidade3}
             productName="Camiseta Relaxed Em Algodão"
-            price="77,00"
+            price="77.00"
             color="Branco"
             badge={false}
             des="Camiseta Relaxed Em Algodão Com Gola Canelada Branco."
@@ -89,7 +89,7 @@ const Novidades = () => {
             _id="100004"
             img={novidade4}
             productName="Vestido Midi Preto"
-            price="60,00"
+            price="60.00"
             color="Preto"
             badge={false}
             des="Vestido New Midi Em Tule Bordado Com Flores E Manga Bufante Preto."
@@ -100,7 +100,7 @@ const Novidades = () => {
             _id="100005"
             img={novidade5}
             productName="Vestido New Midi"
-            price="68,00"
+            price="68.00"
             color="Laranja"
             badge={false}
             des="Vestido New Midi De Alça Em Linho Com Estampa Araras E Abacaxis Laranja."

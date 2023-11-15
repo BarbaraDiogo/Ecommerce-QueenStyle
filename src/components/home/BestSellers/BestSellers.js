@@ -17,7 +17,7 @@ const BestSellers = () => {
           _id="1011"
           img={jaqueta}
           productName="Jaqueta Gola Alta"
-          price="135,00"
+          price="135.00"
           color="Verde"
           badge={true}
           des="Jaqueta Alongada Em Poliamida Com Gola Alta E Zíper Verde."
@@ -26,7 +26,7 @@ const BestSellers = () => {
           _id="1012"
           img={vestido3}
           productName="Vestido Midi Plus Size"
-          price="90,00"
+          price="90.00"
           color="Verde"
           badge={false}
           des="Vestido Midi em Tule Transpassado com Estampa Étnica Curve & Plus Size."
@@ -35,7 +35,7 @@ const BestSellers = () => {
           _id="1013"
           img={jaquetaf}
           productName="Jaqueta Esportiva"
-          price="69,00"
+          price="69.00"
           color="Roxo"
           badge={true}
           des="Jaqueta Esportiva Em Modal Com Capuz E Fechamento Com Zíper Roxo."
@@ -44,7 +44,7 @@ const BestSellers = () => {
           _id="1014"
           img={blusa}
           productName="Blusa Em Renda Azul"
-          price="92,00"
+          price="92.00"
           color="Azul"
           badge={false}
           des="Blusa Em Renda Com Amarração E Estampa De Florezinhas Azul."

@@ -17,7 +17,7 @@ const SpecialOffers = () => {
           _id="1101"
           img={tenis}
           productName="Tênis Street"
-          price="115,00"
+          price="115.00"
           color="Preto"
           badge={true}
           des="Tênis Street Em Material Sintético Com Cadarço E Recortes Preto."
@@ -26,7 +26,7 @@ const SpecialOffers = () => {
           _id="1102"
           img={verde}
           productName="Calça Fluida Verde"
-          price="110,00"
+          price="110.00"
           color="Verde"
           badge={true}
           des="Calça Fluida Em Viscolinho Com Amarração No Cós Verde."
@@ -35,7 +35,7 @@ const SpecialOffers = () => {
           _id="1103"
           img={cinto}
           productName="Kit 2 cintos"
-          price="50,00"
+          price="50.00"
           color="Marrom/Bege"
           badge={true}
           des="Kit 02 Cintos Estreitos Com Diferentes Modelos De Fivela Marrom/Bege."
@@ -44,7 +44,7 @@ const SpecialOffers = () => {
           _id="1104"
           img={smartwatch}
           productName="Smartwatch"
-          price="220,00"
+          price="220.00"
           color="Preto"
           badge={true}
           des="Relógio Mormaii Smartwatch Molife Com Pulseira Em Silicone MOLIFEAB/8P Preto."
