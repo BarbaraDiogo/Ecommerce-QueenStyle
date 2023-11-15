@@ -259,18 +259,18 @@ const SignUp = () => {
                       Entrar
                     </span>
                   </Link>
+                  <br />
+                  <br />
+                  <Link to="/">
+                  <span className="text-black underline cursor-pointer transition-all duration-300 hover:text-red-800">
+                      Voltar ao início.
+                    </span>
+                  </Link>
                 </p>
               </div>
             </div>
           </form>
         )}
-      </div>
-      <div className="fixed top-0 left-0 p-4">
-        <Link to="/">
-          <button className="bg-red-800 text-white px-4 py-2 rounded-md">
-            Início
-          </button>
-        </Link>
       </div>
     </div>
   );

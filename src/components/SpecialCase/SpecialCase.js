@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { RiShoppingCart2Fill } from "react-icons/ri";
 import { MdSwitchAccount } from "react-icons/md";
+import { FaExchangeAlt } from "react-icons/fa";
 import { useSelector } from "react-redux";
 
 const SpecialCase = () => {
@@ -31,6 +32,16 @@ const SpecialCase = () => {
               {products.length}
             </p>
           )}
+        </div>
+      </Link>
+      <Link to="/cart">
+        <div className="bg-white w-16 h-[70px] rounded-md flex flex-col gap-1 text-[#33475b] justify-center items-center shadow-testShadow overflow-x-hidden group cursor-pointer relative">
+          <div className="flex justify-center items-center">
+            <FaExchangeAlt className="text-2xl -translate-x-12 group-hover:translate-x-3 transition-transform duration-200" />
+
+            <FaExchangeAlt className="text-2xl -translate-x-3 group-hover:translate-x-12 transition-transform duration-200" />
+          </div>
+          <p className="text-xs font-semibold font-titleFont">Troca</p>
         </div>
       </Link>
     </div>
