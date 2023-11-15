@@ -2,7 +2,7 @@ import logo from "./QUEENSTYLE.png";
 import logoLight from "./logoLight.png";
 import Mulheres from "./banner/Mulheres.png";
 import Mulheresdois from "./banner/Mulheresdois.png";
-import Imagemtres from "./banner/Imagemtres.png";
+import Mulherestres from "./banner/Mulherestres.png";
 import saleImgOne from "./sale/saleImgOne.webp";
 import saleImgTwo from "./sale/saleImgTwo.webp";
 import saleImgThree from "./sale/saleImgThree.webp";
@@ -36,7 +36,7 @@ export {
   logoLight,
   Mulheres,
   Mulheresdois,
-  Imagemtres,
+  Mulherestres,
   saleImgOne,
   saleImgTwo,
   saleImgThree,

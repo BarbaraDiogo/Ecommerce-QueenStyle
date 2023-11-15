@@ -4,7 +4,7 @@ import Slider from "react-slick";
 import {
   Mulheres,
   Mulheresdois,
-  Imagemtres,
+  Mulherestres,
 } from "../../assets/images";
 import Image from "../designLayouts/Image";
 
@@ -114,7 +114,7 @@ const Banner = () => {
         </Link>
         <Link to="/offer">
           <div>
-            <Image imgSrc={Imagemtres} />
+            <Image imgSrc={Mulherestres} />
           </div>
         </Link>
       </Slider>
