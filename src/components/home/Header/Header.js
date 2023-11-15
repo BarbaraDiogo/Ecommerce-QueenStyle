@@ -7,7 +7,8 @@ import { logo, logoLight } from "../../../assets/images";
 import Image from "../../designLayouts/Image";
 import { navBarList, paginationItems } from "../../../constants";  // Importe as referências necessárias
 import Flex from "../../designLayouts/Flex";
-import { FaSearch, FaUser, FaCaretDown, FaShoppingCart } from "react-icons/fa";
+import { FaSearch, FaUser, FaCaretDown, FaShoppingCart} from "react-icons/fa";
+import { FaExchangeAlt } from "react-icons/fa";
 import { useSelector } from "react-redux";
 
 const Header = () => {
@@ -42,7 +43,7 @@ const Header = () => {
   return (
     <div className="w-full h-20 bg-white sticky top-0 z-50 border-b-[1px] border-b-gray-200">
       <Link to="/">
-        <div className="flex items-center justify-center" style={{ backgroundColor: "#690203", padding:"10px" }}>
+        <div className="flex items-center justify-center" style={{ backgroundColor: "#690203", padding:"10px", borderBottom: "#3d0607 solid 2px" }}>
           <img src={logo} alt="Logo Before Nav" className="w-50 h-20" />
         </div>
       </Link>
@@ -118,11 +119,11 @@ const Header = () => {
           {/* Parte de pesquisa (search bar) */}
           <div className="relative w-full lg:w-[600px] h-[50px] text-base text-primeColor bg-white flex items-center gap-2 justify-between px-6 rounded-xl">
             <input
-              className="flex-1 h-full outline-none placeholder:text-[#C4C4C4] placeholder:text-[14px]"
+              className="flex-1 h-[35px] p-2 outline-none placeholder:text-[#C4C4C4] placeholder:text-[14px] border border-gray-100 rounded-3xl "
               type="text"
               onChange={(e) => setSearchQuery(e.target.value)}
               value={searchQuery}
-              placeholder="Pesquise por seus produtos"
+              placeholder="Buscar produtos"
             />
             <FaSearch className="w-5 h-5" />
             {searchQuery && (
@@ -205,6 +206,11 @@ const Header = () => {
                 <span className="absolute font-titleFont top-3 -right-2 text-xs w-4 h-4 flex items-center justify-center rounded-full bg-primeColor text-white">
                   {products.length > 0 ? products.length : 0}
                 </span>
+              </div>
+            </Link>
+            <Link to="/cart">
+              <div className="relative pl-2">
+                <FaExchangeAlt />
               </div>
             </Link>
           </div>

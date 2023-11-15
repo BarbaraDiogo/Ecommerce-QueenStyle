@@ -23,17 +23,17 @@ export const navBarList = [
   {
     _id: 1002,
     title: "Produtos",
-    link: "/shop",
+    link: "/produtos",
   },
   {
     _id: 1003,
     title: "Sobre",
-    link: "/about",
+    link: "/sobre",
   },
   {
     _id: 1004,
     title: "Contato",
-    link: "contact",
+    link: "contato",
   },
 ];
 // =================== NavBarList End here ======================

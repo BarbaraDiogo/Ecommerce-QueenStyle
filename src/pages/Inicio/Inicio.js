@@ -7,7 +7,7 @@ import Sale from "../../components/home/Sale/Sale";
 import SpecialOffers from "../../components/home/SpecialOffers/SpecialOffers";
 import YearProduct from "../../components/home/YearProduct/YearProduct";
 
-const Home = () => {
+const Inicio = () => {
   return (
     <div className="w-full mx-auto">
       <Banner />
@@ -23,4 +23,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Inicio;
