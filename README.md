@@ -4,6 +4,7 @@
     ### `npm install`
     ### `npm install react-icons`
     ### `npm install react-router-dom`
+    ### `npm install react react-dom`
 
 2) No diretório do projeto execute: 
     ### `npm start`
