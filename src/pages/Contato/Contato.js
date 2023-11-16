@@ -43,6 +43,13 @@ const Contato = () => {
 
   const handlePost = (e) => {
     e.preventDefault();
+
+    // Scroll suave para o topo da página
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+
     if (!clientName) {
       setErrClientName("Enter your Name");
     }
@@ -58,7 +65,7 @@ const Contato = () => {
     }
     if (clientName && email && EmailValidation(email) && messages) {
       setSuccessMsg(
-        `Thank you dear ${clientName}, Your messages has been received successfully. Futher details will sent to you by your email at ${email}.`
+        `Obrigado querido/a ${clientName}. Suas mensagens foram recebidas com sucesso. Mais detalhes serão enviados para você por e-mail no endereço: ${email}."`
       );
     }
   };

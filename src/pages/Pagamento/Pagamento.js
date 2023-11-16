@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import { IoHourglassOutline } from "react-icons/io5";
+import { useDispatch } from "react-redux";
 import Breadcrumbs from "../../components/pageProps/Breadcrumbs";
 import { paymentCard } from "../../assets/images";
+import { resetCart } from "../../redux/orebiSlice";
 
 
 const Pagamento = () => {
+  const dispatch = useDispatch();
   const [mensagemPagamento, setMensagemPagamento] = useState("");
   const [mensagemCartao, setMensagemCartao] = useState("");
   const [outraMensagem, setOutraMensagem] = useState("");
@@ -83,7 +86,10 @@ const Pagamento = () => {
         </h4>
         <div className="w-full h-20 bg-[#F5F7F7] rounded-md flex items-center justify-center mt-5 mb-10">
           <button
-            onClick={() => handlePagamentoClick("pix")}
+            onClick={() => {
+              handlePagamentoClick("pix");
+              dispatch(resetCart());
+            }}
             className={`mr-2 py-2 px-10 border ${
               botaoAtivo === "pix" ? "border-green-500 bg-green-500 text-white" : "border-gray-500"
             } text-black font-semibold uppercase mb-4 duration-300`}
@@ -91,7 +97,7 @@ const Pagamento = () => {
             Pix
           </button>
           <button
-            onClick={() => handlePagamentoClick("cartao")}
+              onClick={() => handlePagamentoClick("cartao")}
             className={`mr-2 py-2 px-10 border ${
               botaoAtivo === "cartao" ? "border-blue-800 bg-blue-800 text-white" : "border-gray-500"
             } text-black font-semibold uppercase mb-4 duration-300`}
@@ -99,7 +105,10 @@ const Pagamento = () => {
             Cartão de Crédito
           </button>
           <button
-            onClick={() => handlePagamentoClick("boleto")}
+            onClick={() => {
+              handlePagamentoClick("boleto");
+              dispatch(resetCart());
+            }}
             className={`py-2 px-10 border ${
               botaoAtivo === "boleto" ? "border-purple-700 bg-purple-700 text-white" : "border-gray-500"
             } text-black font-semibold uppercase mb-4 duration-300`}
@@ -196,6 +205,7 @@ const Pagamento = () => {
                       disabled={formularioEnviado}
                       onClick={() => {
                         scrollToTop(); // Chamando a função de scroll ao clicar no botão "Finalizar"
+                        dispatch(resetCart());
                       }}
                       className="bg-primeColor hover:bg-black text-gray-200 hover:text-white cursor-pointer w-full text-base font-medium h-10 rounded-md  duration-300"
                     >
