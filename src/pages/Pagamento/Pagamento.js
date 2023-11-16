@@ -66,6 +66,14 @@ const Pagamento = () => {
     setFormularioEnviado(true); // Atualizar o estado para indicar que o formulário foi enviado
   };
 
+  const scrollToTop = () => {
+    // Scroll suave para o topo da página
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  };
+
   return (
     <div className="max-w-container mx-auto px-4">
       <Breadcrumbs title="Pagamento" />
@@ -186,6 +194,9 @@ const Pagamento = () => {
                     <button
                       type="submit"
                       disabled={formularioEnviado}
+                      onClick={() => {
+                        scrollToTop(); // Chamando a função de scroll ao clicar no botão "Finalizar"
+                      }}
                       className="bg-primeColor hover:bg-black text-gray-200 hover:text-white cursor-pointer w-full text-base font-medium h-10 rounded-md  duration-300"
                     >
                       Finalizar

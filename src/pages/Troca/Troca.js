@@ -29,7 +29,7 @@ const Troca = () => {
 
         setFormEnviado(true);
         setMostrarFormulario(false); // Oculta o form após envio
-        setOutraMensagem("Seu produto está sendo avaliado e entraremos em contato através do e-mail fornecido em breve")
+        setOutraMensagem("Seu produto está sendo avaliado e entraremos em contato através do e-mail fornecido em breve.")
     };
 
     const mostrarOcultarFormulario = () => {
