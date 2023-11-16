@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { IoHourglassOutline } from "react-icons/io5";
-import Breadcrumbs from "../../components/pageProps/Breadcrumbs";  // Import Breadcrumbs
+import Breadcrumbs from "../../components/pageProps/Breadcrumbs";
+import { paymentCard } from "../../assets/images";
 
 
 const Pagamento = () => {
@@ -108,6 +109,9 @@ const Pagamento = () => {
                     Informações do Cartão de Crédito
                   </p>
                   <div className="flex flex-col gap-3">
+                    <img src={paymentCard} className="w-30 h-10 mb-2" />
+                  </div>
+                  <div className="flex flex-col gap-3">
                     <div className="flex flex-col gap-.5">
                       <p className="font-titleFont text-base font-semibold text-gray-600">
                         Numero do Cartão
@@ -144,9 +148,10 @@ const Pagamento = () => {
                         onChange={handleInputChange}
                         value={dadosCartao.dataVencimento}
                         className="w-full h-8 placeholder:text-sm placeholder:tracking-wide px-4 text-base font-medium placeholder:font-normal rounded-md border-[1px] border-gray-400 outline-none"
-                        type="data"
-                        name="data"
+                        type="month"
+                        name="dataVencimento"
                         placeholder="MM/AA"
+                        min={new Date().toISOString().split("T")[0]} 
                       />
                     </div>
                     <div className="flex flex-col gap-.5">

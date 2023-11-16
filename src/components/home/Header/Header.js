@@ -202,7 +202,7 @@ const Header = () => {
                 </span>
               </div>
             </Link>
-            <Link to="/carrinho">
+            <Link to="/troca">
               <div className="relative pl-2">
                 <FaExchangeAlt />
               </div>

@@ -20,6 +20,7 @@ import Offer from "./pages/Offer/Offer";
 import Pagamento from "./pages/Pagamento/Pagamento";
 import ProductDetails from "./pages/ProductDetails/ProductDetails";
 import Produtos from "./pages/Produtos/Produtos";
+import Troca from "./pages/Troca/Troca";
 
 const Layout = () => {
   return (
@@ -48,6 +49,7 @@ const router = createBrowserRouter(
         <Route path="/produtos/:_id" element={<ProductDetails />}></Route>
         <Route path="/carrinho" element={<Carrinho />}></Route>
         <Route path="/pagamento" element={<Pagamento />}></Route>
+        <Route path="/troca" element={<Troca />}></Route>
       </Route>
       <Route path="/signup" element={<SignUp />}></Route>
       <Route path="/signin" element={<SignIn />}></Route>
