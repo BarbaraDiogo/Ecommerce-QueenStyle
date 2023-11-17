@@ -1,0 +1,14 @@
+POST http://localhost:3333/api/register
+Content-Type: application/json
+
+{
+    "name": "Bruno bruto",
+    "genero":"Masculino",
+    "telefone":"16988649785",
+    "endereco_email":"bruto@gmail.com",
+    "CPF_CNPJ":"5265789451",
+    "endereco_entrega":"Constance dell cruz 9878",
+    "nome_usuario":"Bruto",
+    "senha":"Brut@!",
+    "confirmacao_senha":"Brut@!",
+}
