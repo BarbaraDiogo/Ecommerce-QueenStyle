@@ -38,7 +38,7 @@ const Layout = () => {
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route>
-      <Route path="/Ecommerce-QueenStyle" element={<Layout />}>
+      <Route path="/" element={<Layout />}>
         {/* ==================== Header Navlink Start here =================== */}
         <Route index element={<Inicio />}></Route>
         <Route path="/produtos" element={<Produtos />}></Route>
