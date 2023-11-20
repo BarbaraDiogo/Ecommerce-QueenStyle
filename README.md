@@ -5,11 +5,12 @@
     ### `npm install react-icons`
     ### `npm install react-router-dom`
     ### `npm install react react-dom`
+    ### `npm install multer axios`
 
-2) No diretório do projeto execute: 
+3) No diretório do projeto execute: 
     ### `npm start`
 
-3) Acesse o projeto localmente
+4) Acesse o projeto localmente
     http://localhost:3000
 
 
